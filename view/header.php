@@ -10,14 +10,10 @@
 	</head>
 <body>
 	<div id="header" class="background">
-		<div class="link">
-			<a href="login.php">Login</a>
+			<div class="link">
+				<a href="login.php">Login</a>
+			</div>
+			<div class="link">
+				<a href="register.php">Register</a>
+			</div>
 		</div>
-		<div class="link">
-			<a href="register.php">Register</a>
-		</div>
-		<div class="link">
-			<a href="index.php">Home</a>
-		</div>
-	</div>
-	

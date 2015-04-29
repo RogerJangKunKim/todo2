@@ -1,3 +1,4 @@
+
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 
@@ -13,8 +14,9 @@
 		//checks if hashed password=new hashed password
 		if($row["password"] === crypt($password, $row["salt"])){
 			$_SESSION["authenticated"] = true;
+			header("Location: " . $path . "todo.php");
 			echo "<p>Login Successful</p>";
-			echo "<li><a href=" . "$path" . "index.php" . ">Home</li>";
+			echo "<li><a href=" . "$path" . "todo.php" . ">Home</li>";
 		}
 		else{
 			echo "<p>Invalid Username and Password</p>";
